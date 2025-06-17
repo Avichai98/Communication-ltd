@@ -57,7 +57,7 @@ NEXT_PUBLIC_APP_URL=https://your-production-url.com
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repository-url>
+   git clone https://github.com/Avichai98/Communication-ltd
    cd communication_ltd
    ```
 
