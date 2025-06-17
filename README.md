@@ -73,7 +73,10 @@ NEXT_PUBLIC_APP_URL=https://your-production-url.com
    ```
    
 4. **Init DB**
-Then visit `http://localhost:3000/api/init-db` to create the database tables.
+
+   Create DB with the name 'communication_ltd'
+   
+   Then visit `http://localhost:3000/api/init-db` to create the database tables.
 
 5. **Access the application**
    Open `http://localhost:3000` in your browser.

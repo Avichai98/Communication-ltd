@@ -98,7 +98,7 @@ export async function initializeDatabase() {
     await db.query(`
       CREATE TABLE IF NOT EXISTS users (
         id INT AUTO_INCREMENT PRIMARY KEY,
-        username VARCHAR(1000) NOT NULL UNIQUE,
+        username VARCHAR(200) NOT NULL UNIQUE,
         email VARCHAR(100) NOT NULL UNIQUE,
         password_hash VARCHAR(255) NOT NULL,
         salt VARCHAR(255) NOT NULL,
@@ -147,7 +147,7 @@ export async function initializeDatabase() {
     // Create login_attempts table
     await db.query(`
       CREATE TABLE IF NOT EXISTS login_attempts (
-        username VARCHAR(1000) PRIMARY KEY,
+        username VARCHAR(200) PRIMARY KEY,
         attempts INT DEFAULT 1,
         last_attempt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
       )
@@ -158,7 +158,7 @@ export async function initializeDatabase() {
     await db.query(`
       CREATE TABLE IF NOT EXISTS customers (
         id INT AUTO_INCREMENT PRIMARY KEY,
-        name VARCHAR(1000) NOT NULL,
+        name VARCHAR(200) NOT NULL,
         email VARCHAR(100) NOT NULL,
         phone VARCHAR(20) NOT NULL,
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
